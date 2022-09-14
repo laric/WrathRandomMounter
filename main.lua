@@ -70,7 +70,7 @@ end
 local waitTable = {};
 local waitFrame = nil;
 
-function wrm_wait(delay, func, ...)
+local function wrm_wait(delay, func, ...)
   if(type(delay)~="number" or type(func)~="function") then
     return false;
   end
