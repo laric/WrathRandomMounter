@@ -4,9 +4,9 @@ SLASH_WRM1 = "/WRM"
 SLASH_WRP1 = "/WRP"
 local inDebugMode = false
 
-local mounted = IsMounted()
-local inCombat = InCombatLockdown()
 local CurrentZoneCategory = 'None'
+local mounted = IsMounted
+local inCombat = InCombatLockdown
 
 local myMounts = {
   ["myGroundMounts"] = {},
