@@ -203,6 +203,7 @@ local function UpdateMacro(groundMount, flyingMount, swimmingMount)
     local groundMountString2 = ""
     local flyingMountString = ""
     local swimmingMountString = ""
+    if inCombat() then return end  -- If in combat lockdown don't update macro as it is not allowed.
     local tooltip = ""
 
     --Get the correct string for the different lines of the macro
